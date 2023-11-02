@@ -1,0 +1,54 @@
+/* --------------------
+| Fonts ↓
+---------------------*/
+
+/* --------------------
+| Icons Font ↓
+---------------------*/
+
+/* --------------------
+| Variables ↓
+---------------------*/
+//< Font ↓
+$fontFamilly: 'Josefin Sans', sans-serif;
+$fontSize: 14px;
+$fzColor: #fff;
+
+//< Basic colors ↓
+$bgColor: #1e1e2b;
+
+//< Basic sizes ↓
+$minWidth: 320;
+$containerWidth: 1270;
+$tamplateWidth: 1920;
+
+//< Basic breakppoints ↓
+$mb1min: 992.9px;
+$mb1max: 992.8px;
+$mb2min: 768.9px;
+$mb2max: 768.8px;
+$mb3min: 480.9px;
+$mb3max: 480.8px;
+
+/* --------------------
+| Main Styles ↓
+---------------------*/
+._container {
+    max-width: $containerWidth + px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.test {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+/* -------------------- 
+| Additional files ↓
+---------------------*/
+@import 'null-style.scss';
