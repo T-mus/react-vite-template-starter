@@ -12,10 +12,6 @@ import './App.scss'
 --------------------*/
 
 const App = () => {
-    return (
-        <>
-            <div className="test">test</div>
-        </>
-    )
+    return <></>
 }
 export default App
