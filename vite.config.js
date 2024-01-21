@@ -36,10 +36,10 @@ export default defineConfig(() => {
             base: '/',
         },
         build: {
-            base: import.meta.env.FR_PROJECT_NAME,
+            base: "react-vite-template-starter",
             rollupOptions: {
                 input: {
-                    main: resolve(__dirname, 'public/index.html'),
+                    main: resolve(__dirname, 'index.html'),
                 },
             },
         },
