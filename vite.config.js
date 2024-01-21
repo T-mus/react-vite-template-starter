@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig(() => {
     return {
-        base: 'react-vite-template-starter',
+        envPrefix: 'FR_',
         plugins: [
             react(),
             ViteImageOptimizer({
@@ -20,18 +20,26 @@ export default defineConfig(() => {
                 },
             }),
         ],
+        /* commonjsOptions: {
+            esmExternals: true, //| It helped me with reacr-router v5
+        }, */
         esbuild: {
             jsxInject: `import React from 'react'`,
         },
         resolve: {
+            extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
             alias: {
                 // 'symbol': resolve(__dirname, './src/folder...')
             },
         },
+        dev: {
+            base: '/',
+        },
         build: {
+            base: import.meta.env.FR_PROJECT_NAME,
             rollupOptions: {
                 input: {
-                    main: resolve(__dirname, 'index.html'),
+                    main: resolve(__dirname, 'public/index.html'),
                 },
             },
         },

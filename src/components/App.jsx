@@ -1,7 +1,7 @@
 /* --------------------
 | Styles and sources ↓ 
 --------------------*/
-import './App.scss'
+import '../assets/App.scss'
 
 /* --------------------
 | App modules ↓ 
@@ -12,6 +12,8 @@ import './App.scss'
 --------------------*/
 
 const App = () => {
-    return <></>
+    return <div>
+
+    </div>
 }
 export default App
